@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Café & Pão | Cafeteria e Padaria Artesanal</title>
+  <meta name="description" content="Cafeteria e padaria artesanal com cafés especiais, pães de fermentação natural e doces frescos. Faça seu pedido online, reserve sua mesa e fale no WhatsApp.">
+  <meta name="keywords" content="cafeteria, padaria, café especial, pão artesanal, doce, reserva, pedido online, delivery">
+  <link rel="canonical" href="https://exemplo-cafeteria.local/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Café & Pão | Cafeteria e Padaria Artesanal">
+  <meta property="og:description" content="Cafés especiais, pães artesanais e doces frescos. Peça online ou reserve.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://exemplo-cafeteria.local/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1600&auto=format&fit=crop">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Café & Pão | Cafeteria e Padaria Artesanal">
+  <meta name="twitter:description" content="Cafés especiais, pães artesanais e doces frescos. Peça online ou reserve.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1600&auto=format&fit=crop">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- Flatpickr date/time picker -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Café & Pão",
+    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop",
+    "servesCuisine": ["Coffee", "Bakery", "Dessert"],
+    "telephone": "+55 43 98433-6883",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "",
+      "addressRegion": "PR",
+      "addressCountry": "BR"
+    },
+    "priceRange": "$$",
+    "url": "https://exemplo-cafeteria.local/"
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Página inicial">Café & Pão</a>
+      <button class="nav-toggle" aria-label="Abrir menu"><i class="fa-solid fa-bars"></i></button>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#pedidos">Pedidos</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#reservas">Reservas</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" role="banner" aria-label="Destaque">
+    <div class="hero-media" aria-hidden="true"></div>
+    <div class="container hero-content">
+      <h1>Cafés especiais e pães artesanais, todos os dias</h1>
+      <p>Um espaço acolhedor para saborear momentos. Faça seu pedido online ou reserve sua mesa.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#cardapio">Ver cardápio</a>
+        <a class="btn btn-outline" href="#reservas">Reservar mesa</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="section">
+    <div class="container grid-2">
+      <div class="text">
+        <h2 class="section-title">Nossa história</h2>
+        <p>Somos apaixonados por café e panificação artesanal. Selecionamos grãos especiais e fermentamos nossos pães naturalmente, garantindo sabor e qualidade excepcionais.</p>
+        <p>Do expresso perfeito ao croissant amanteigado, cada detalhe é pensado para uma experiência premium e acolhedora.</p>
+      </div>
+      <div class="media">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=1200&auto=format&fit=crop" alt="Barista preparando café" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section id="cardapio" class="section alt">
+    <div class="container">
+      <h2 class="section-title center">Cardápio</h2>
+      <div class="filters" role="tablist" aria-label="Filtros do cardápio">
+        <button class="filter active" data-filter="all" role="tab" aria-selected="true">Tudo</button>
+        <button class="filter" data-filter="cafes" role="tab">Cafés</button>
+        <button class="filter" data-filter="paes" role="tab">Pães</button>
+        <button class="filter" data-filter="doces" role="tab">Doces</button>
+      </div>
+      <div class="menu-grid" id="menuGrid">
+        <!-- Cafés -->
+        <article class="menu-item cafes" data-name="Espresso" data-price="8">
+          <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=800&auto=format&fit=crop" alt="Espresso" loading="lazy">
+          <div class="info">
+            <h3>Espresso</h3>
+            <p>Clássico, intenso e aromático.</p>
+            <div class="price-actions"><span class="price">R$ 8</span><button class="add">Adicionar</button></div>
+          </div>
+        </article>
+        <article class="menu-item cafes" data-name="Cappuccino" data-price="14">
+          <img src="https://images.unsplash.com/photo-1504753793650-d4a2b783c15e?q=80&w=800&auto=format&fit=crop" alt="Cappuccino" loading="lazy">
+          <div class="info">
+            <h3>Cappuccino</h3>
+            <p>Espresso, leite cremoso e espuma sedosa.</p>
+            <div class="price-actions"><span class="price">R$ 14</span><button class="add">Adicionar</button></div>
+          </div>
+        </article>
+        <!-- Pães -->
+        <article class="menu-item paes" data-name="Pão de Fermentação Natural" data-price="18">
+          <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?q=80&w=800&auto=format&fit=crop" alt="Pão de fermentação natural" loading="lazy">
+          <div class="info">
+            <h3>Pão de Fermentação Natural</h3>
+            <p>Crocante por fora, macio por dentro.</p>
+            <div class="price-actions"><span class="price">R$ 18</span><button class="add">Adicionar</button></div>
+          </div>
+        </article>
+        <article class="menu-item paes" data-name="Croissant" data-price="12">
+          <img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?q=80&w=800&auto=format&fit=crop" alt="Croissant" loading="lazy">
+          <div class="info">
+            <h3>Croissant</h3>
+            <p>Folhado amanteigado, perfeito para o café.</p>
+            <div class="price-actions"><span class="price">R$ 12</span><button class="add">Adicionar</button></div>
+          </div>
+        </article>
+        <!-- Doces -->
+        <article class="menu-item doces" data-name="Bolo de Chocolate" data-price="16">
+          <img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=800"
+               alt="Bolo de chocolate"
+               loading="lazy"
+               referrerpolicy="no-referrer"
+               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1599785209792-9e94d5a35304?q=80&w=800&auto=format&fit=crop';">
+          <div class="info">
+            <h3>Bolo de Chocolate</h3>
+            <p>Fofinho e molhadinho, cobertura cremosa.</p>
+            <div class="price-actions"><span class="price">R$ 16</span><button class="add">Adicionar</button></div>
+          </div>
+        </article>
+        <article class="menu-item doces" data-name="Torta de Limão" data-price="15">
+          <img src="https://www.frimesa.com.br/upload/image/recipe/recipe_05_img2_torta-de-limc3a3o.jpg"
+               alt="Torta de limão"
+               loading="lazy"
+               referrerpolicy="no-referrer"
+               onerror="this.onerror=null;this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22600%22%3E%3Crect width=%22800%22 height=%22600%22 fill=%22%23222222%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23c89b3c%22 font-size=%2236%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22 font-family=%22Inter,%20Arial%22%3ETorta%20de%20Lim%C3%A3o%3C/text%3E%3C/svg%3E';">
+          <div class="info">
+            <h3>Torta de Limão</h3>
+            <p>Equilíbrio perfeito entre doce e cítrico.</p>
+            <div class="price-actions"><span class="price">R$ 15</span><button class="add">Adicionar</button></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="pedidos" class="section">
+    <div class="container">
+      <div class="orders">
+        <div class="orders-info">
+          <h2 class="section-title">Pedidos online</h2>
+          <p>Monte seu pedido e finalize pelo WhatsApp. Rápido e fácil.</p>
+          <ul class="benefits">
+            <li><i class="fa-solid fa-check"></i> Itens do cardápio atualizados</li>
+            <li><i class="fa-solid fa-check"></i> Resumo do carrinho automático</li>
+            <li><i class="fa-solid fa-check"></i> Envio direto para o WhatsApp</li>
+          </ul>
+        </div>
+        <div class="cart" aria-live="polite">
+          <h3>Seu carrinho</h3>
+          <div id="cartItems" class="cart-items"></div>
+          <div class="cart-footer">
+            <div class="total">Total: <strong id="cartTotal">R$ 0,00</strong></div>
+            <button id="checkoutBtn" class="btn btn-primary" disabled>Finalizar pelo WhatsApp</button>
+            <button id="clearCartBtn" class="btn btn-text" disabled>Limpar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="avaliacoes" class="section alt">
+    <div class="container">
+      <h2 class="section-title center">Avaliações</h2>
+      <div class="reviews">
+        <figure class="review">
+          <blockquote>Ambiente acolhedor e o melhor cappuccino da cidade!</blockquote>
+          <figcaption>
+            <span class="stars" aria-label="5 de 5">★★★★★</span>
+            <span class="author">— Mariana</span>
+          </figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote>Os pães de fermentação natural são incríveis. Volto sempre.</blockquote>
+          <figcaption>
+            <span class="stars" aria-label="5 de 5">★★★★★</span>
+            <span class="author">— Lucas</span>
+          </figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote>Doces frescos e atendimento impecável. Recomendo!</blockquote>
+          <figcaption>
+            <span class="stars" aria-label="5 de 5">★★★★★</span>
+            <span class="author">— Camila</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="reservas" class="section">
+    <div class="container grid-2">
+      <div class="text">
+        <h2 class="section-title">Reservas</h2>
+        <p>Garanta seu lugar em horários movimentados. Respondemos pelo WhatsApp rapidamente.</p>
+        <p>Para eventos e encomendas, descreva sua necessidade no campo de mensagem.</p>
+      </div>
+      <form id="reservationForm" class="form" novalidate>
+        <div class="form-row">
+          <label>Nome
+            <input type="text" name="nome" placeholder="Seu nome" required>
+          </label>
+          <label>Telefone
+            <input type="tel" name="telefone" placeholder="(43) 99999-9999" required>
+          </label>
+        </div>
+        <div class="form-row">
+          <label>Data
+            <input type="date" name="data" required>
+          </label>
+          <label>Horário
+            <input type="time" name="hora" required>
+          </label>
+        </div>
+        <div class="form-row">
+          <label>Pessoas
+            <input type="number" name="pessoas" min="1" value="2" required>
+          </label>
+          <label>Mensagem
+            <input type="text" name="mensagem" placeholder="Preferências ou observações">
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Reservar pelo WhatsApp</button>
+        <p id="formFeedback" class="form-feedback" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container gallery">
+      <img src="https://images.unsplash.com/photo-1504753793650-d4a2b783c15e?q=80&w=600&auto=format&fit=crop" alt="Café latte artístico" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?q=80&w=600&auto=format&fit=crop';">
+      <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?q=80&w=600&auto=format&fit=crop" alt="Pães artesanais" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?q=80&w=600&auto=format&fit=crop';">
+      <img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?q=80&w=600&auto=format&fit=crop" alt="Croissant folhado" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='https://picsum.photos/seed/croissant/600/450';">
+      <img src="https://picsum.photos/seed/bolo-chocolate/600/450" alt="Bolo de chocolate" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22450%22%3E%3Crect width=%22600%22 height=%22450%22 fill=%22%23222222%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23c89b3c%22 font-size=%2232%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22 font-family=%22Inter,%20Arial%22%3EBolo%20de%20Chocolate%3C/text%3E%3C/svg%3E';">
+    </div>
+  </section>
+
+  <footer id="contato" class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Café & Pão</h3>
+        <p>Cafés especiais, pães artesanais e doces frescos.</p>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul class="contact">
+          <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/5543984336883" target="_blank" rel="noopener">+55 43 98433-6883</a></li>
+          <li><i class="fa-solid fa-location-dot"></i> Endereço a definir</li>
+          <li><i class="fa-solid fa-clock"></i> Seg-Sáb: 08h às 20h</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Redes</h4>
+        <div class="socials">
+          <a aria-label="Instagram" href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a aria-label="Facebook" href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a aria-label="Maps" href="#"><i class="fa-solid fa-map"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright">© <span id="year"></span> Café & Pão. Todos os direitos reservados.</div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/5543984336883" class="whatsapp" target="_blank" rel="noopener" aria-label="Fale conosco no WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Flatpickr scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/pt.js"></script>
+  <script src="js.js"></script>
+</body>
+</html>
+ 
